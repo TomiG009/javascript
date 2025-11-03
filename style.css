@@ -13,8 +13,22 @@ body{
     margin-left: 10%;
     margin-right: 10%;
 }
-   
 
+
+#boton1{
+    background-color: #11270b;
+    color: rgb(255, 255, 255);
+}
+
+#boton2{
+    background-color: #11270b;
+    color: rgb(255, 255, 255);
+}
+
+#boton3{
+    background-color: #11270b;
+    color: rgb(255, 255, 255);
+}
 
 #cambioAmarillo{
     background-color: #11270b;
@@ -39,3 +53,9 @@ body{
     color: #ffffff;
 }
 
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: auto;
+}
