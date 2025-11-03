@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo" onclick="cambioTexto()">Animales</h1>
+
+<button id="cambioVerde" onclick="azul()">Vaca</button>
+<button id="cambioNaranja" onclick="naranja()">Leon</button>
+<button id="cambioNegro" onclick="negro()">Mono</button>
+<button id="cambioMarron" onclick="marron()">Gato</button>
+<button id="cambioAmarillo" onclick="amarillo()">Caballo</button>
+
+
+<script>
+    let texto_a_cambiar = document.getElementById("titulo");
+    function cambioTexto(){
+        texto_a_cambiar.innerHTML = "Borra la cuenta";
+    }
+    function azul(){
+        document.body.style.backgroundColor = "blue";
+    }
+    function naranja(){
+        document.body.style.backgroundColor = "orange";
+    }
+    function negro(){
+        document.body.style.backgroundColor = "black";
+    }
+    function marron(){
+        document.body.style.backgroundColor = "brown";
+    }function amarillo(){
+        document.body.style.backgroundColor = "yellow";
+    }
+
+     
+
+
+    
+
+</script>
+
+</body>
+</html>

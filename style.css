@@ -1,0 +1,41 @@
+h1{
+    color: rgb(12, 217, 253);
+    margin-left: 50%;
+}
+body{
+    background-color: #749C75
+}
+
+.foto{   
+    width: auto;
+    height: auto; 
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+   
+
+
+#cambioAmarillo{
+    background-color: #11270b;
+    color: rgb(255, 255, 255);
+}
+
+#cambioNegro{
+    background-color: #11270b;
+    color: white;
+}
+#cambioVerde{
+    background-color: #11270b;
+    color: #ffffff;
+}
+#cambioMarron{
+    background-color: #11270b;
+    color: #ffffff;
+}
+
+#cambioNaranja{
+    background-color: #11270b;
+    color: #ffffff;
+}
+

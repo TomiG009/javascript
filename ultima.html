@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="imagenAnimal" src="img/animal.webp" alt="Animal" onclick="mostrarTexto()">
+    <a href="">Presiona para Reiniciar</a>
+
+<script>
+    let aparecer_foto = document.getElementById("botfoto");
+    let imagen = document.getElementById("imagenAnimal");
+    const textoExplicativo = "El Reino Animal es uno de los grupos de organismos más grandes y diversos del planeta, ya que su gran variedad de especies, hacen un  mundo fascinante por descubrir. Los animales pueden encontrarse en casi todos los hábitats de la Tierra, desde las profundidades del océano hasta las cumbres de las montañas, y desempeñan roles cruciales en los ecosistemas, como polinizadores, depredadores y descomponedores. Además, los animales tienen una gran importancia cultural y económica para los seres humanos, ya que muchos son domesticados para la agricultura, la compañía y la investigación científica. Explorar el Reino Animal nos permite comprender mejor la biodiversidad de nuestro planeta y la interconexión entre todas las formas de vida.";
+
+    function cambiarFoto(){
+        aparecer_foto.innerHTML = textoExplicativo;
+    }
+
+    function mostrarTexto(){
+        imagen.outerHTML = `<p>${textoExplicativo}</p>`;
+    }
+</script>
+</body>
+</html>
