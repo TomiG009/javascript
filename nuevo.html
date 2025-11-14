@@ -197,10 +197,53 @@
         }
     </script>
     
-</body>
-</html>
+
+        <h1 id="titulo" onclick="cambioTexto()">Animales</h1>
+    <button id="cambiouno" onclick="cambiar()">Mas</button>
+    <button id="cambiodos" onclick="cambiar()">Mas</button>
+    <button id="cambiotres" onclick="cambiar()">Mas</button>
 
 
+<div class="botones">    
+<button id="cambioVerde" onclick="azul()">Vaca</button>
+<button id="cambioNaranja" onclick="naranja()">Leon</button>
+<button id="cambioNegro" onclick="negro()">Mono</button>
+<button id="cambioMarron" onclick="marron()">Gato</button>
+<button id="cambioAmarillo" onclick="amarillo()">Caballo</button>
+</div>
 
+<script>
+    let texto_a_cambiar = document.getElementById("titulo");
+    function cambioTexto(){
+        texto_a_cambiar.innerHTML = "Gracias por ver!!!!";
+    }
+    function azul(){
+        document.body.style.backgroundColor = "blue";
+    }
+    function naranja(){
+        document.body.style.backgroundColor = "orange";
+    }
+    function negro(){
+        document.body.style.backgroundColor = "black";
+    }
+    function marron(){
+        document.body.style.backgroundColor = "brown";
+    }function amarillo(){
+        document.body.style.backgroundColor = "yellow";
+    }
+
+</script>
+
+
+<script>
+    let texto_cambio = document.getElementById("cambiouno");
+    function cambiar(){
+        texto_a_cambiar.innerHTML = "entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor.";
+    }
+
+
+    
+
+</script>
 </body>
 </html>
