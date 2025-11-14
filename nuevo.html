@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animales</title>
+    <link rel="shortcut icon" href="img/sipdibuj.jpg" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f5f5f5;
+            background-color: #fff9c2;
             margin: 0;
             padding: 20px;
         }
@@ -57,7 +58,7 @@
         }
 
         .acordeon button {
-            background-color: #3498db;
+            background-color: #2e6600;
             color: white;
             border: none;
             padding: 10px;
@@ -75,6 +76,7 @@
 
         .panel img {
             width: 200px;
+            height: 200px;
             transition: transform 0.3s ease;
             cursor: pointer;
         }
@@ -83,12 +85,17 @@
             transform: scale(0.7);
         }
 
+        img {
+            width: 350px;
+            height: 350px;
+        }
+
     </style>
 </head>
 <body>
 
     <h1>Ciudad Animal</h1>
-
+    <img src="img/sipdibuj.jpg" alt="">
    
     <div class="menu">
         <button onclick="mostrarTexto('texto1')">Animales</button>
@@ -102,7 +109,7 @@
     <div class="columnas">
         <div class="columna">Los perros son animales muy fieles y protectores.</div>
         <div class="columna">Los gatos son curiosos, ágiles y muy independientes.</div>
-        <div class="columna">Los caballos son nobles, fuertes y elegantes.</div>
+        <div class="columna">Los lobos se caracterizan por ser mamíferos carnívoros sociales y territoriales con sentidos agudos, como el olfato y el oído.</div>
     </div>
 
     
@@ -126,11 +133,11 @@
         function mostrarTexto(opcion) {
             let texto = "";
             if (opcion === "texto1") {
-                texto = "Los animales son seres vivos que sienten y perciben su entorno.";
+                texto = "Los animales son seres vivos, sintientes y pensantes. Hay más de un millón y medio de especies de animales diferentes y se pueden agrupar de muchas maneras: por su tamaño, por su reproducción, por su nutrición o por el medio donde viven, por ejemplo, acuáticos o terrestres.";
             } else if (opcion === "texto2") {
-                texto = "Cada especie animal tiene un papel importante en el ecosistema.";
+                texto = "Una especie es un grupo de organismos que comparten características, se pueden reproducir entre sí y tener descendencia fértil. Los animales se clasifican en distintas especies, las cuales a su vez se agrupan en categorías como vertebrados (mamíferos, aves, peces, anfibios, reptiles) e invertebrados. Existen miles de especies, que pueden ser clasificadas por su hábitat, alimentación o método de reproducción.  ";
             } else if (opcion === "texto3") {
-                texto = "Debemos cuidar y respetar a todos los animales del planeta.";
+                texto = "El ambiente de los animales se conoce como hábitat, que es el lugar específico donde viven y encuentran todo lo necesario para su supervivencia, como alimento, agua, refugio, oxígeno y espacio. Los hábitats se clasifican principalmente en terrestres (bosques, desiertos, selvas), acuáticos (ríos, lagos, océanos) y aeroterrestres (donde vuelan o viven en tierra y aire). El ambiente incluye tanto los componentes bióticos (vivos) como los abióticos (no vivos). ";
             }
             document.getElementById("textoMenu").innerText = texto;
         }
