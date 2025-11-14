@@ -1,0 +1,66 @@
+body{
+    background-color: #749c75;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+
+
+h1 {
+   color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+p{
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+.foto1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+.font{
+    font-family: cursive ;
+    font-size: 20px;
+}
+
+#botgallina, #botelefante, #bottigre{
+    display: block;
+    margin: 1rem auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #31493c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #a2daba;
+    color: #000000; 
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.column:hover {
+    transform: scale(1.1);
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animales</title>
     <link rel="shortcut icon" href="img/sipdibuj.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="stylenew.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -153,6 +154,53 @@
             img.classList.toggle("shrink");
         }
     </script>
+
+
+<body class="font">
+    <img class="foto1" src="img/WhatsApp Image 2025-11-14 at 10.29.20.jpeg" alt="">
+
+    <button id="botgallina" onclick="mostrarTexto1()">Gallina</button>
+    <p id="Gallina">Presione el boton para mas información.</p>
+
+    <button id="botelefante" onclick="mostrarTexto2()">Elefante</button>
+    <p id="Elefante">Presione el boton para mas información.</p>
+
+    <button id="bottigre" onclick="mostrarTexto3()">Tigre</button>
+    <p id="Tigre">Presione el boton para mas información.</p>
+
+    <div class="text-columns">
+        <div class="column">Animales acuaticos:
+          ballenas, delfines, tiburones, peces, medusas, pulpos, estrellas de mar, caballitos de mar.
+        </div>
+        <div class="column">Animales terrestres:
+          caballos, perros, gatos, elefantes, leones, tigres, osos, jirafas, cebras.
+        </div>
+        <div class="column"> Animales aereo:
+          loros, aguilas, buitres, halcones, palomas, tucanes, flamencos, abejas.
+        </div>
+    </div>
+
+    <script>
+        let aparece_texto = document.getElementById("Gallina");
+        function mostrarTexto1() {
+            aparece_texto.innerHTML = "Los nombres comunes son: gallo, para el macho; gallina, para la hembra; pollo, para los subadultos y pollito, para las crías recién nacidas.​ Es el ave más numerosa del planeta, pues se calcula que el número de ejemplares supera los dieciséis mil millones. Los gallos y gallinas se crían principalmente por su carne y por sus huevos. También se aprovechan sus plumas y algunas variedades se crían y entrenan para su uso en peleas de gallos y como aves ornamentales. Es un ave omnívora. Su esperanza de vida se encuentra entre los cinco y los diez años, según la raza.";
+        }
+
+        let aparece_texto2 = document.getElementById("Elefante");
+        function mostrarTexto2() {
+            aparece_texto2.innerHTML = "Los elefantes son los animales terrestres más grandes que existen en la actualidad. Pueden alcanzar una altura de hasta 4 metros y un peso de hasta 7 toneladas. Son conocidos por su inteligencia, memoria excepcional y habilidades sociales complejas. Los elefantes tienen una trompa larga y flexible que utilizan para diversas funciones, como alimentarse, beber agua, comunicarse y manipular objetos. Viven en manadas lideradas por una hembra dominante llamada matriarca. Los elefantes son herbívoros y se alimentan principalmente de hierbas, hojas, frutas y corteza de árboles.";
+        }
+
+        let aparece_texto3 = document.getElementById("Tigre");
+        function mostrarTexto3() {
+            aparece_texto3.innerHTML = "El tigre (Panthera tigris) es una especie de mamífero carnívoro de la familia Felidae. Es el felino más grande del mundo y se caracteriza por su pelaje anaranjado con rayas negras. Los tigres son animales solitarios y territoriales que habitan en diversas regiones de Asia, desde bosques tropicales hasta tundras frías. Son depredadores apex, lo que significa que están en la cima de la cadena alimentaria y no tienen depredadores naturales. Su dieta se compone principalmente de grandes herbívoros como ciervos y jabalíes. Los tigres están en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.";
+        }
+    </script>
+    
+</body>
+</html>
+
+
 
 </body>
 </html>
