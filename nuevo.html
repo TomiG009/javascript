@@ -118,13 +118,13 @@
         <button onclick="toggleAcordeon(0)">Animales Domésticos</button>
         <div class="panel">
             
-            <img src="https://placedog.net/200/200" alt="Perro" onclick="toggleImg(this)">
+            <img src="img/perrito.jpg" alt="Perro" onclick="toggleImg(this)">
             <img src="img/gato.jfif" alt="Perro" onclick="toggleImg(this)">
         </div>
 
         <button onclick="toggleAcordeon(1)">Animales Salvajes</button>
         <div class="panel">
-            <img src="https://placebear.com/200/200" alt="Oso" onclick="toggleImg(this)">
+            <img src="img/osito.jpg" alt="Oso" onclick="toggleImg(this)">
             <img src="img/loboo.jpg" alt="Oso" onclick="toggleImg(this)">
         </div>
     </div>
@@ -233,11 +233,12 @@
 
 </script>
 
-
+    <img id="imagenAnimal" src="img/animal.webp" alt="Animal" onclick="mostrarTexto()">
+    <a href="">Reiniciar</a>
 <script>
     let texto_cambio = document.getElementById("cambiouno");
     function cambiar(){
-        texto_a_cambiar.innerHTML = "entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor.";
+        texto_a_cambiar.innerHTML = "Pagina realizada por nosotros";
     }
 </script>
 <script>
@@ -253,5 +254,7 @@
         imagen.outerHTML = `<p>${textoExplicativo}</p>`;
     }
 </script>
+
+
 </body>
 </html>
