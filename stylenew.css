@@ -92,3 +92,87 @@ button{
 .columnas{
     background-color: #a2daba;
 }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff9c2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        
+        .menu {
+            margin-bottom: 30px;
+        }
+
+        .menu button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #textoMenu {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        
+        .columnas {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .columna {
+            width: 30%;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .columna:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .acordeon {
+            margin-top: 40px;
+        }
+
+        .acordeon button {
+            background-color: #2e6600;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .panel {
+            display: none;
+            padding: 10px;
+            background-color: #e8f0fe;
+        }
+
+        .panel img {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .panel img.shrink {
+            transform: scale(0.7);
+        }
+
+        img {
+            width: 350px;
+            height: 350px;
+        }
