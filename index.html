@@ -4,19 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animales</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/sipdibuj.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="stylenew.css">
+    <style>
+
+
+    </style>
 </head>
 <body>
-    <h1 id="titulo" onclick="cambioTexto()">Animales</h1>
+
+    <h1>Ciudad Animal</h1>
+    <img src="img/sipdibuj.jpg" alt="">
+   
+    <div class="menu">
+       
+
+        <p id="textoMenu"></p>
+    </div>
+
+    
+    <div class="columnas">
+        <div class="columna">Los animales son organismos pluricelulares eucariotas y heterótrofos, con capacidad de movimiento y reproducción sexual. Se clasifican en grandes grupos como vertebrados (con columna vertebral) e invertebrados (sin ella)</div>
+        <div class="columna">Las especies de animales son grupos de organismos que comparten características similares y pueden reproducirse entre sí para dar lugar a descendencia fértil. Se clasifican en grandes grupos (mamíferos, aves, peces, anfibios y reptiles). Se pueden agrupar, ya sea por su dieta (herbívoros, carnívoros, omnívoros) o por su origen (autóctonas o exóticas). </div>
+        <div class="columna">El ambiente de los animales, conocido como hábitat, es el lugar donde encuentran lo necesario para vivir como alimento, agua, refugio y espacio</div>
+    </div>
+
+    
+    <div class="acordeon">
+        <button onclick="toggleAcordeon(0)">Animales Domésticos</button>
+        <div class="panel">
+            
+            <img src="img/perrito.jpg" alt="Perro" onclick="toggleImg(this)">
+            <img src="img/gato.jfif" alt="Perro" onclick="toggleImg(this)">
+        </div>
+
+        <button onclick="toggleAcordeon(1)">Animales Salvajes</button>
+        <div class="panel">
+            <img src="img/osito.jpg" alt="Oso" onclick="toggleImg(this)">
+            <img src="img/loboo.jpg" alt="Oso" onclick="toggleImg(this)">
+        </div>
+    </div>
+
+    <script>
+        
+        function mostrarTexto(opcion) {
+            let texto = "";
+            if (opcion === "texto1") {
+                texto = "Los animales son seres vivos, sintientes y pensantes. Hay más de un millón y medio de especies de animales diferentes y se pueden agrupar de muchas maneras: por su tamaño, por su reproducción, por su nutrición o por el medio donde viven, por ejemplo, acuáticos o terrestres.";
+            } else if (opcion === "texto2") {
+                texto = "Una especie es un grupo de organismos que comparten características, se pueden reproducir entre sí y tener descendencia fértil. Los animales se clasifican en distintas especies, las cuales a su vez se agrupan en categorías como vertebrados (mamíferos, aves, peces, anfibios, reptiles) e invertebrados. Existen miles de especies, que pueden ser clasificadas por su hábitat, alimentación o método de reproducción.  ";
+            } else if (opcion === "texto3") {
+                texto = "El ambiente de los animales se conoce como hábitat, que es el lugar específico donde viven y encuentran todo lo necesario para su supervivencia, como alimento, agua, refugio, oxígeno y espacio. Los hábitats se clasifican principalmente en terrestres (bosques, desiertos, selvas), acuáticos (ríos, lagos, océanos) y aeroterrestres (donde vuelan o viven en tierra y aire). El ambiente incluye tanto los componentes bióticos (vivos) como los abióticos (no vivos). ";
+            }
+            document.getElementById("textoMenu").innerText = texto;
+        }
+
+        
+        function toggleAcordeon(index) {
+            let paneles = document.getElementsByClassName("panel");
+            paneles[index].style.display = (paneles[index].style.display === "block") ? "none" : "block";
+        }
+
+        
+        function toggleImg(img) {
+            img.classList.toggle("shrink");
+        }
+    </script>
+
+
+<div class="font">
+    <img class="foto1" src="img/WhatsApp Image 2025-11-14 at 10.29.20.jpeg" alt="">
+
+    <button id="botgallina" onclick="mostrarTexto1()">Gallina</button>
+    <p id="Gallina">Presione el boton para mas información.</p>
+
+    <button id="botelefante" onclick="mostrarTexto2()">Elefante</button>
+    <p id="Elefante">Presione el boton para mas información.</p>
+
+    <button id="bottigre" onclick="mostrarTexto3()">Tigre</button>
+    <p id="Tigre">Presione el boton para mas información.</p>
+
+    <div class="text-columns">
+        <div class="column">Animales acuaticos:
+          ballenas, delfines, tiburones, peces, medusas, pulpos, estrellas de mar, caballitos de mar.
+        </div>
+        <div class="column">Animales terrestres:
+          caballos, perros, gatos, elefantes, leones, tigres, osos, jirafas, cebras.
+        </div>
+        <div class="column"> Animales aereo:
+          loros, aguilas, buitres, halcones, palomas, tucanes, flamencos, abejas.
+        </div>
+    </div>
+
+    <script>
+        let aparece_texto = document.getElementById("Gallina");
+        function mostrarTexto1() {
+            aparece_texto.innerHTML = "Los nombres comunes son: gallo, para el macho; gallina, para la hembra; pollo, para los subadultos y pollito, para las crías recién nacidas.​ Es el ave más numerosa del planeta, pues se calcula que el número de ejemplares supera los dieciséis mil millones. Los gallos y gallinas se crían principalmente por su carne y por sus huevos. También se aprovechan sus plumas y algunas variedades se crían y entrenan para su uso en peleas de gallos y como aves ornamentales. Es un ave omnívora. Su esperanza de vida se encuentra entre los cinco y los diez años, según la raza.";
+        }
+
+        let aparece_texto2 = document.getElementById("Elefante");
+        function mostrarTexto2() {
+            aparece_texto2.innerHTML = "Los elefantes son los animales terrestres más grandes que existen en la actualidad. Pueden alcanzar una altura de hasta 4 metros y un peso de hasta 7 toneladas. Son conocidos por su inteligencia, memoria excepcional y habilidades sociales complejas. Los elefantes tienen una trompa larga y flexible que utilizan para diversas funciones, como alimentarse, beber agua, comunicarse y manipular objetos. Viven en manadas lideradas por una hembra dominante llamada matriarca. Los elefantes son herbívoros y se alimentan principalmente de hierbas, hojas, frutas y corteza de árboles.";
+        }
+
+        let aparece_texto3 = document.getElementById("Tigre");
+        function mostrarTexto3() {
+            aparece_texto3.innerHTML = "El tigre (Panthera tigris) es una especie de mamífero carnívoro de la familia Felidae. Es el felino más grande del mundo y se caracteriza por su pelaje anaranjado con rayas negras. Los tigres son animales solitarios y territoriales que habitan en diversas regiones de Asia, desde bosques tropicales hasta tundras frías. Son depredadores apex, lo que significa que están en la cima de la cadena alimentaria y no tienen depredadores naturales. Su dieta se compone principalmente de grandes herbívoros como ciervos y jabalíes. Los tigres están en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.";
+        }
+    </script>
+    
+
+        <h1 id="titulo" onclick="cambioTexto()">Animales</h1>
     <button id="cambiouno" onclick="cambiar()">Mas</button>
-    <button id="cambiodos" onclick="cambiar()">Mas</button>
-    <button id="cambiotres" onclick="cambiar()">Mas</button>
+
 
 
 <div class="botones">    
 <button id="cambioVerde" onclick="azul()">Vaca</button>
 <button id="cambioNaranja" onclick="naranja()">Leon</button>
-<button id="cambioNegro" onclick="negro()">Mono</button>
+<button id="cambioNegro" onclick="verde()">Mono</button>
 <button id="cambioMarron" onclick="marron()">Gato</button>
 <button id="cambioAmarillo" onclick="amarillo()">Caballo</button>
 </div>
@@ -24,7 +130,7 @@
 <script>
     let texto_a_cambiar = document.getElementById("titulo");
     function cambioTexto(){
-        texto_a_cambiar.innerHTML = "Borra la cuenta";
+        texto_a_cambiar.innerHTML = "Gracias por ver!!!!";
     }
     function azul(){
         document.body.style.backgroundColor = "blue";
@@ -32,8 +138,8 @@
     function naranja(){
         document.body.style.backgroundColor = "orange";
     }
-    function negro(){
-        document.body.style.backgroundColor = "black";
+    function verde(){
+        document.body.style.backgroundColor = "green";
     }
     function marron(){
         document.body.style.backgroundColor = "brown";
@@ -43,20 +149,28 @@
 
 </script>
 
-
+    <img id="imagenAnimal" src="img/animal.webp" alt="Animal" onclick="mostrarTexto()">
+    <a href="">Reiniciar</a>
 <script>
     let texto_cambio = document.getElementById("cambiouno");
     function cambiar(){
-        texto_a_cambiar.innerHTML = "entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor.";
+        texto_a_cambiar.innerHTML = "Pagina realizada por Bianca, Martu, Tomi, Tato y More";
+    }
+</script>
+<script>
+    let aparecer_foto = document.getElementById("botfoto");
+    let imagen = document.getElementById("imagenAnimal");
+    const textoExplicativo = "El Reino Animal es uno de los grupos de organismos más grandes y diversos del planeta, ya que su gran variedad de especies, hacen un  mundo fascinante por descubrir. Los animales pueden encontrarse en casi todos los hábitats de la Tierra, desde las profundidades del océano hasta las cumbres de las montañas, y desempeñan roles cruciales en los ecosistemas, como polinizadores, depredadores y descomponedores. Además, los animales tienen una gran importancia cultural y económica para los seres humanos, ya que muchos son domesticados para la agricultura, la compañía y la investigación científica. Explorar el Reino Animal nos permite comprender mejor la biodiversidad de nuestro planeta y la interconexión entre todas las formas de vida.";
+
+    function cambiarFoto(){
+        aparecer_foto.innerHTML = textoExplicativo;
     }
 
-
-    
-
+    function mostrarTexto(){
+        imagen.outerHTML = `<p>${textoExplicativo}</p>`;
+    }
 </script>
-<!--crear un menu con 3 botones. cada uno de ellos mostrara un texto diferente
-crear un diseño que contenga 3 columnas de texto y al pasar el mouse sobre el texto se debe ampliar levemente 
-dentro de un acordeon crear imagenes que se achiquen al hacerle click y que vuelva al estado normal al hacer otro click-->
+
+
 </body>
 </html>
-
